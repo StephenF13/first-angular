@@ -16,7 +16,7 @@ export class AppComponent implements OnInit, OnDestroy {
     counterSubscription: Subscription;
 
     ngOnInit() {
-        // pas Observable.interbal ?
+        // pas Observable.interval ?
         const counter = interval(1000);
         this.counterSubscription = counter.subscribe(
             (value) => {
